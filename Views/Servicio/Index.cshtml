@@ -1,0 +1,32 @@
+﻿@model List<CarWash1._0.Models.ServicioModel>
+
+<h2>Lista de Servicios </h2>
+<button class="btn btn-primary">
+    <i class="fas fa-user-plus"></i> Nuevo
+</button>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id Servicio</th>
+            <th>Servicio</th>
+            <th>Descripcion </th>
+            <th>Precio </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var servicio in Model)
+        {
+            <tr>
+                <td>@servicio.IdServicio</td>
+                <td>@servicio.Servicio </td>
+                <td>@servicio.Descripcion </td>
+                <td>@servicio.Precio</td>
+
+                <td>
+                    <a class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> </a>
+                    <a class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
