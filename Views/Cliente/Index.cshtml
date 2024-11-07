@@ -3,21 +3,36 @@
 <h2>Lista de Clientes</h2>
 <button class="btn btn-primary">
     <i class="fas fa-user-plus"></i> Nuevo
+</button> 
+<button class="btn btn-dark" style="float: right;">
+    
+    <i class="fa-solid fa-magnifying-glass"></i> Buscar
 </button>
 <table class="table table-striped">
     <thead>
         <tr>
+            <th>Id Cliente</th>
             <th>Nombre</th>
             <th>Apellido</th>
+            <th>Telefono </th>
+            <th> Correo</th>
+            <th>Dirección </th>
+            <th> Estado</th>
             <th>Acción</th>
+            <th> </th>
         </tr>
     </thead>
     <tbody>
         @foreach (var cliente in Model)
         {
             <tr>
+                <td>@cliente.IdCliente</td>
                 <td>@cliente.Nombre</td>
                 <td>@cliente.Apellido</td>
+                <td>@cliente.Telefono</td>
+                <td>@cliente.Correo</td>
+                <td>@cliente.Direccion</td>
+                <td>@cliente.Estado</td>
                 <td>
                     <a class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> </a>
                     <a class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
