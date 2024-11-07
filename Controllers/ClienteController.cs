@@ -5,7 +5,7 @@ namespace CarWash1._0.Controllers
 {
     public class ClienteController : Controller
     {
-        public IActionResult Index()
+       public IActionResult Index()
         {
             var lstCliente = new List<ClienteModel>
         {
