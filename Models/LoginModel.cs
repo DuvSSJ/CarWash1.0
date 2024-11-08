@@ -4,5 +4,6 @@
     {
         public string? Usuario { get; set; }
         public string? Clave { get; set; }
+        public int? Estado { get; set; }
     }
 }
