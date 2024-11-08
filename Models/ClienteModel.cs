@@ -10,6 +10,6 @@
         public string? Correo { get; set; }
         public string? Direccion { get; set; }
 
-        public bool? Estado { get; set; } = false;
+        public int? Estado { get; set; } 
     }
 }

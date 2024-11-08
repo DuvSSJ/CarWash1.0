@@ -13,6 +13,6 @@
         public string? ObservacionRenuncia { get; set;}
         public string? Usuario { get; set;}
         public string? Clave { get; set;}
-        public bool? Estado { get; set;}
+        public int? Estado { get; set;}
 }
 }
